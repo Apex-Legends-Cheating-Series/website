@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Apex Legends Cheating Series"
-  text: "ALCS S2"
+  text: "Series 2"
   tagline: 目前最正规的Cheat比赛
   image:
     src: /logo.png
