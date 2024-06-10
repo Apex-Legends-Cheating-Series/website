@@ -1,9 +1,35 @@
 import { defineConfig } from 'vitepress'
+import { withPwa, type PwaOptions } from "@vite-pwa/vitepress"
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
+  pwa: {
+    registerType: 'autoUpdate',
+    outDir: '.vitepress/dist',
+    strategies: 'generateSW',
+    manifest: {
+      id: '/',
+      name: 'Apex Legends Cheating Series',
+      short_name: 'ALCS',
+      description: 'Apex Legends Cheating Series 2',
+      icons: [
+        {
+          src: 'logo.png',
+          sizes: 'any',
+          type: 'image/png',
+          purpose: 'any'
+        }
+      ]
+    },
+    workbox: {
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}']
+    },
+    experimental: {
+      includeAllowlist: true
+    }
+  },
   title: "Apex Legends Cheating Series",
-  description: "ALCS S2",
+  description: "Apex Legends Cheating Series",
   appearance: 'force-dark',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -47,4 +73,4 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Apex-Legends-Cheating-Series' }
     ]
   }
-})
+}))
