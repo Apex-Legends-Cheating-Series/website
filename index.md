@@ -7,7 +7,7 @@ hero:
   text: "ALCS S2"
   tagline: 目前最正规的Cheat比赛
   image:
-    src: /logo.webp
+    src: /logo.png
     alt: ALCSLOGO
   actions:
     - theme: brand

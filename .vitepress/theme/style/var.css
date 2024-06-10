@@ -1,7 +1,10 @@
 :root {
     --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(71,0,0,1) 0%, rgba(247,60,60,0.8883928571428571) 100%);
-
-    --vp-home-hero-image-background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(255, 0, 0) 0%, rgba(255, 36, 36, 0.888) 100%);
-    --vp-home-hero-image-filter: blur(100px);
+/*   --vp-home-hero-image-background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(255, 0, 0) 0%, rgba(255, 36, 36, 0.888) 100%);
+    --vp-home-hero-image-filter: blur(100px); */
 }
+
+.VPHero .image-src {
+    max-width: 800px;
+  }
