@@ -24,6 +24,27 @@ onBeforeMount(async () => {
 })
 </script>
 
+<template>
+  <template v-if="offlineReady">
+    <div
+      class="pwa-toast"
+      role="alertdialog"
+      aria-labelledby="pwa-message"
+    >
+      <div id="pwa-message" class="mb-3">
+        文档已加载完毕
+      </div>
+      <button
+        type="button"
+        class="pwa-cancel"
+        @click="close"
+      >
+        关闭
+      </button>
+    </div>
+  </template>
+</template>
+
 <style>
     .pwa-toast {
         position: fixed;
@@ -36,7 +57,7 @@ onBeforeMount(async () => {
         z-index: 100;
         text-align: left;
         box-shadow: 3px 4px 5px 0 #8885;
-        background-color: white;
+        background-color: rgba(31, 29, 29, 0.527);
     }
     .pwa-toast #pwa-message {
         margin-bottom: 8px;
