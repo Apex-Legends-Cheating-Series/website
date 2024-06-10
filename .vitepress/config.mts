@@ -3,11 +3,12 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Apex Legends Cheating Series",
-  description: "Hacker Vs. Hacker",
+  description: "ALCS S2",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' }
+      { text: '主页', link: '/' },
+      { text: '赛事介绍', link: '/docs/Introduction'}
     ],
 
     sidebar: [
@@ -42,7 +43,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Apex-Legends-Cheating-Series' }
     ]
   }
 })
