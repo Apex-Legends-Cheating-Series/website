@@ -14,7 +14,7 @@ export default withPwa(defineConfig({
       description: 'Apex Legends Cheating Series 2',
       icons: [
         {
-          src: 'logo.png',
+          src: 'favicon.ico',
           sizes: 'any',
           type: 'image/png',
           purpose: 'any'
