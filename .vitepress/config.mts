@@ -16,8 +16,7 @@ export default withPwa(defineConfig({
         {
           src: 'favicon.png',
           sizes: 'any',
-          type: 'image/png',
-          purpose: 'any'
+          type: 'image/png'
         }
       ]
     },
